@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PwC – Prakse u finansijama i konsaltingu | Internship4Day</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/company-htec.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container header-content">
+            <div class="logo">
+                <span class="logo-mark">I4D</span>
+                <span class="logo-text">Internship4Day</span>
+            </div>
+
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html#hero">Početna</a></li>
+                    <li><a href="index.html#companies">Kompanije</a></li>
+                    <li><a href="index.html#how-it-works">Kako funkcioniše</a></li>
+                    <li><a href="index.html#alumni">Alumni klub</a></li>
+                    
+                </ul>
+            </nav>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Otvori meni">
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO ZA PwC -->
+        <section class="company-hero">
+            <div class="container company-hero-content">
+                <div class="company-hero-info">
+                    <a href="index.html#companies" class="back-link">← Nazad na listu kompanija</a>
+
+                    <h1>PwC</h1>
+                    <p class="company-hero-meta">
+                        Finansije &amp; Konsalting • Beograd • Revizija, porezi, poslovno savetovanje
+                    </p>
+                    <p class="company-hero-text">
+                        PwC je međunarodna kompanija koja u Srbiji pruža usluge revizije, poreskog savetovanja 
+                        i poslovnog konsaltinga. Kroz <strong>Internship4day</strong> možeš da provedeš jedan dan prakse 
+                        u različitim timovima i vidiš kako izgleda rad na projektima za domaće i međunarodne klijente.
+                    </p>
+                </div>
+
+                <div class="company-hero-side">
+                    <div class="company-highlight-card">
+                        <p class="highlight-title">Informacije o programu praksi</p>
+                        <ul class="highlight-list">
+                            <li>Oblasti prakse: revizija, porezi, poslovno savetovanje</li>
+                            <li>Lokacija: Beograd</li>
+                            <li>Trajanje dana prakse: 4–6 sati</li>
+                            <li>Aktivnosti: sastanci sa timom, uvid u projekte, analiza podataka</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FILTERI ZA PRAKSE U PwC -->
+        <section class="mentors-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Pronađi dan prakse u PwC</h2>
+                    <p>
+                        Filtriraj dane prakse po oblasti i lokaciji. Možeš da izabereš praksu u reviziji, 
+                        porezima ili poslovnom savetovanju i vidiš kako se teorijsko znanje primenjuje na 
+                        konkretnim klijentima i projektima.
+                    </p>
+                </header>
+
+                <form class="filters mentors-filters">
+                    <div class="filter-group">
+                        <label for="mentorSearchInput">Pretraga pozicija za praksu</label>
+                        <input 
+                            type="text" 
+                            id="mentorSearchInput" 
+                            placeholder="Unesi ime osobe ili naziv pozicije..."
+                        >
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="departmentSelect">Oblast prakse</label>
+                        <select id="departmentSelect">
+                            <option value="">Sve oblasti</option>
+                            <option value="revizija">Revizija</option>
+                            <option value="porezi">Porezi</option>
+                            <option value="konsalting">Poslovno savetovanje</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="mentorLocationSelect">Lokacija prakse</label>
+                        <select id="mentorLocationSelect">
+                            <option value="">Sve lokacije</option>
+                            <option value="beograd">Beograd</option>
+                            <option value="novisad">Novi Sad</option>
+                        </select>
+                    </div>
+                </form>
+
+                <!-- LISTA POZICIJA ZA PRAKSU -->
+                <div class="mentors-grid" id="mentorsList">
+                    
+                    <!-- PRAKSA 1 – Revizija -->
+                    <article class="mentor-card" data-departman="revizija" data-lokacija="beograd">
+                        <header class="mentor-header">
+                            <div class="mentor-avatar">ND</div>
+                            <div>
+                                <h3>Nemanja Dragić</h3>
+                                <p class="mentor-role">Revizorski tim – Junior pozicija</p>
+                                <p class="mentor-meta">Dan prakse: Beograd • Finansijske revizije &amp; izveštaji</p>
+                            </div>
+                        </header>
+
+                        <p class="mentor-description">
+                            Dan prakse u revizorskom timu podrazumeva uvid u način na koji se analiziraju finansijski izveštaji,
+                            proveravaju podaci i pripremaju izveštaji za klijente. Dobićeš sliku kako izgleda tipičan radni dan 
+                            u oblasti revizije.
+                        </p>
+
+                        <div class="mentor-tags">
+                            <span>Revizija</span>
+                            <span>Finansijski izveštaji</span>
+                            <span>Excel</span>
+                        </div>
+
+                        <div class="mentor-actions">
+                            <button class="btn small-btn">Detalji o danu prakse</button>
+                        </div>
+                    </article>
+
+                    <!-- PRAKSA 2 – Porezi -->
+                    <article class="mentor-card" data-departman="porezi" data-lokacija="beograd">
+                        <header class="mentor-header">
+                            <div class="mentor-avatar">IS</div>
+                            <div>
+                                <h3>Ivana Stanković</h3>
+                                <p class="mentor-role">Poreski tim – Trainee pozicija</p>
+                                <p class="mentor-meta">Dan prakse: Beograd • Poresko savetovanje &amp; analize</p>
+                            </div>
+                        </header>
+
+                        <p class="mentor-description">
+                            U poreznom timu upoznaćeš se sa osnovama poreskih propisa, analizom dokumentacije i pripremom 
+                            poreskih izveštaja. Dan prakse uključuje praćenje rada tima na realnim upitima klijenata.
+                        </p>
+
+                        <div class="mentor-tags">
+                            <span>Porezi</span>
+                            <span>Regulative</span>
+                            <span>Analiza dokumenata</span>
+                        </div>
+
+                        <div class="mentor-actions">
+                            <button class="btn small-btn">Detalji o danu prakse</button>
+                        </div>
+                    </article>
+
+                    <!-- PRAKSA 3 – Poslovno savetovanje -->
+                    <article class="mentor-card" data-departman="konsalting" data-lokacija="beograd">
+                        <header class="mentor-header">
+                            <div class="mentor-avatar">MP</div>
+                            <div>
+                                <h3>Marko Petrović</h3>
+                                <p class="mentor-role">Business Consulting – Analyst pozicija</p>
+                                <p class="mentor-meta">Dan prakse: Beograd • Analiza biznisa &amp; prezentacije</p>
+                            </div>
+                        </header>
+
+                        <p class="mentor-description">
+                            Ova praksa daje uvid u poslovne analize, pripremu prezentacija za klijente i rad na 
+                            strategijskim projektima. Idealan izbor ako te interesuje spoj biznisa, brojki i prezentovanja.
+                        </p>
+
+                        <div class="mentor-tags">
+                            <span>Biznis analiza</span>
+                            <span>PowerPoint</span>
+                            <span>Konsalting</span>
+                        </div>
+
+                        <div class="mentor-actions">
+                            <button class="btn small-btn">Detalji o danu prakse</button>
+                        </div>
+                    </article>
+
+                    <!-- PRAKSA 4 – Remote uvid -->
+                    <article class="mentor-card" data-departman="konsalting" data-lokacija="novisad">
+                        <header class="mentor-header">
+                            <div class="mentor-avatar">TD</div>
+                            <div>
+                                <h3>Tamara Dimitrijević</h3>
+                                <p class="mentor-role">Risk &amp; Compliance tim</p>
+                                <p class="mentor-meta">Dan prakse: Novi Sad • Procesi &amp; usklađenost</p>
+                            </div>
+                        </header>
+
+                        <p class="mentor-description">
+                            Dan prakse u risk &amp; compliance oblasti pruža uvid u to kako kompanije prate usklađenost
+                            sa regulativama, internim procedurama i standardima. Fokus je na procesima, dokumentaciji 
+                            i komunikaciji sa različitim timovima.
+                        </p>
+
+                        <div class="mentor-tags">
+                            <span>Risk</span>
+                            <span>Compliance</span>
+                            <span>Procesi</span>
+                        </div>
+
+                        <div class="mentor-actions">
+                            <button class="btn small-btn">Detalji o danu prakse</button>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- MODAL ZA KALENDAR PWC -->
+    <div class="schedule-overlay" id="scheduleOverlay">
+        <div class="schedule-modal">
+            <button class="schedule-close" id="scheduleCloseBtn">×</button>
+
+            <h2>Izaberite termin</h2>
+            <p class="schedule-subtitle">
+                Odaberite jedan od slobodnih termina za dan prakse u PwC-u.
+            </p>
+
+            <div id="calendarContainer"></div>
+
+            <button class="btn primary-btn schedule-confirm-btn" id="scheduleConfirmBtn">
+                Zakaži dan prakse
+            </button>
+        </div>
+    </div>
+
+    <!-- SUCCESS MODAL -->
+    <div class="success-overlay" id="successOverlay">
+        <div class="success-modal">
+            <div class="success-icon">✔</div>
+            <h3>Uspešno zakazano!</h3>
+            <p>Poslali smo vam sve informacije o terminu dana prakse.</p>
+            <button class="btn primary-btn" id="successCloseBtn">U redu</button>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© <span id="year"></span> Internship4day • PwC – Program praksi</p>
+        </div>
+    </footer>
+
+    <script src="scripts/pwc.js"></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

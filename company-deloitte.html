@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deloitte – Prakse u konsaltingu | Internship4Day</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/company-htec.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container header-content">
+            <div class="logo">
+                <span class="logo-mark">I4D</span>
+                <span class="logo-text">Internship4Day</span>
+            </div>
+
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html#hero">Početna</a></li>
+                    <li><a href="index.html#companies">Kompanije</a></li>
+                    <li><a href="index.html#how-it-works">Kako funkcioniše</a></li>
+                    <li><a href="index.html#alumni">Alumni klub</a></li>
+                    
+                </ul>
+            </nav>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Otvori meni">
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO: DELOITTE -->
+        <section class="company-hero">
+            <div class="container company-hero-content">
+                <div class="company-hero-info">
+                    <a href="index.html#companies" class="back-link">← Nazad na listu kompanija</a>
+
+                    <h1>Deloitte</h1>
+                    <p class="company-hero-meta">
+                        Konsalting &amp; Savetovanje • Beograd • Strategija, finansije, tehnologija &amp; rizik
+                    </p>
+                    <p class="company-hero-text">
+                        Deloitte je međunarodna kompanija koja pruža usluge poslovnog savetovanja, revizije, 
+                        poreskog i pravnog savetovanja, kao i tehnološkog konsaltinga. 
+                        Kroz <strong>Internship4day</strong> možeš da provedeš jedan dan prakse sa različitim timovima
+                        i vidiš kako se rade analize, pripremaju prezentacije i donose strateške odluke za klijente.
+                    </p>
+                </div>
+
+                <div class="company-hero-side">
+                    <div class="company-highlight-card">
+                        <p class="highlight-title">Informacije o programu praksi</p>
+                        <ul class="highlight-list">
+                            <li>Oblasti prakse: strategija, finansijski konsalting, rizik, tehnologija</li>
+                            <li>Lokacija: Beograd</li>
+                            <li>Trajanje dana prakse: 4–6 sati</li>
+                            <li>Aktivnosti: sastanci sa timom, rad na analizama, priprema materijala za klijente</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FILTERI ZA PRAKSE U DELOITTE -->
+        <section class="mentors-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Pronađi dan prakse u Deloitte</h2>
+                    <p>
+                        Filtriraj dane prakse po oblasti i lokaciji. Bilo da te zanima strategija, finansijski 
+                        konsalting, rizik ili tehnološki projekti, ovde možeš da izabereš dan prakse koji ti je najbliži.
+                    </p>
+                </header>
+
+                <form class="filters mentors-filters">
+                    <div class="filter-group">
+                        <label for="mentorSearchInput">Pretraga pozicija za praksu</label>
+                        <input 
+                            type="text" 
+                            id="mentorSearchInput" 
+                            placeholder="Unesi ime osobe ili naziv pozicije..."
+                        >
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="departmentSelect">Oblast prakse</label>
+                        <select id="departmentSelect">
+                            <option value="">Sve oblasti</option>
+                            <option value="strategija">Strategija</option>
+                            <option value="finansije">Finansijski konsalting</option>
+                            <option value="rizik">Rizik &amp; usklađenost</option>
+                            <option value="tehnologija">Tehnološki konsalting</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="mentorLocationSelect">Lokacija prakse</label>
+                        <select id="mentorLocationSelect">
+                            <option value="">Sve lokacije</option>
+                            <option value="beograd">Beograd</option>
+                            <option value="novisad">Novi Sad</option>
+                        </select>
+                    </div>
+                </form>
+
+                <!-- LISTA POZICIJA ZA PRAKSU -->
+                <div class="mentors-grid" id="mentorsList">
+                    
+                    <!-- PRAKSA 1 – Strategija -->
+                    <article class="mentor-card" data-departman="strategija" data-lokacija="beograd">
+                        <header class="mentor-header">
+                            <div class="mentor-avatar">IV</div>
+                            <div>
+                                <h3>Ivana Vuković</h3>
+                                <p class="mentor-role">Junior Strategy Analyst</p>
+                                <p class="mentor-meta">Dan prakse: Beograd • Tržišne analize &amp; strategija rasta</p>
+                            </div>
+                        </header>
+
+                        <p class="mentor-description">
+                            Dan prakse u timu za strategiju daje uvid u istraživanje tržišta, analizu konkurencije 
+                            i pripremu predloga strategija za klijente. Prisustvuješ internim sastancima i vidiš kako 
+                            se prezentuju ključni zaključci.
+                        </p>
+
+                        <div class="mentor-tags">
+                            <span>Strategija</span>
+                            <span>Tržišne analize</span>
+                            <span>PowerPoint</span>
+                        </div>
+
+                        <div class="mentor-actions">
+                            <button class="btn small-btn">Detalji o danu prakse</button>
+                        </div>
+                    </article>
+
+                    <!-- PRAKSA 2 – Finansijski konsalting -->
+                    <article class="mentor-card" data-departman="finansije" data-lokacija="beograd">
+                        <header class="mentor-header">
+                            <div class="mentor-avatar">DS</div>
+                            <div>
+                                <h3>Dejan Simić</h3>
+                                <p class="mentor-role">Financial Advisory – Analyst</p>
+                                <p class="mentor-meta">Dan prakse: Beograd • Finansijske analize &amp; valuacije</p>
+                            </div>
+                        </header>
+
+                        <p class="mentor-description">
+                            U ovom danu prakse pratiš rad na finansijskim modelima, pripremi valuacija, 
+                            analizama bilansa i izveštaja za klijente koji planiraju investicije ili akvizicije.
+                        </p>
+
+                        <div class="mentor-tags">
+                            <span>Finansijski modeli</span>
+                            <span>Excel</span>
+                            <span>Valuacija</span>
+                        </div>
+
+                        <div class="mentor-actions">
+                            <button class="btn small-btn">Detalji o danu prakse</button>
+                        </div>
+                    </article>
+
+                    <!-- PRAKSA 3 – Rizik & usklađenost -->
+                    <article class="mentor-card" data-departman="rizik" data-lokacija="novisad">
+                        <header class="mentor-header">
+                            <div class="mentor-avatar">KP</div>
+                            <div>
+                                <h3>Katarina Popović</h3>
+                                <p class="mentor-role">Risk &amp; Compliance Consultant</p>
+                                <p class="mentor-meta">Dan prakse: Novi Sad • Procena rizika &amp; regulative</p>
+                            </div>
+                        </header>
+
+                        <p class="mentor-description">
+                            Ova praksa pruža uvid u rad na projektima usklađenosti sa regulativom, 
+                            procenu rizika i kreiranje preporuka za unapređenje procesa u kompanijama-klijentima.
+                        </p>
+
+                        <div class="mentor-tags">
+                            <span>Risk</span>
+                            <span>Compliance</span>
+                            <span>Regulative</span>
+                        </div>
+
+                        <div class="mentor-actions">
+                            <button class="btn small-btn">Detalji o danu prakse</button>
+                        </div>
+                    </article>
+
+                    <!-- PRAKSA 4 – Tehnološki konsalting -->
+                    <article class="mentor-card" data-departman="tehnologija" data-lokacija="novisad">
+                        <header class="mentor-header">
+                            <div class="mentor-avatar">NS</div>
+                            <div>
+                                <h3>Nemanja Stefanović</h3>
+                                <p class="mentor-role">Technology Consultant</p>
+                                <p class="mentor-meta">Dan prakse: Novi Sad • IT projekti &amp; digitalna transformacija</p>
+                            </div>
+                        </header>
+
+                        <p class="mentor-description">
+                            Dan prakse u tehnološkom konsaltingu uključuje rad na projektima digitalne transformacije, 
+                            uvođenje novih IT sistema i komunikaciju sa klijentima o tehnološkim rešenjima koja 
+                            podržavaju biznis.
+                        </p>
+
+                        <div class="mentor-tags">
+                            <span>IT projekti</span>
+                            <span>Digitalna transformacija</span>
+                            <span>Konsalting</span>
+                        </div>
+
+                        <div class="mentor-actions">
+                            <button class="btn small-btn">Detalji o danu prakse</button>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- MODAL ZA KALENDAR – DELOITTE -->
+    <div class="schedule-overlay" id="scheduleOverlay">
+        <div class="schedule-modal">
+            <button class="schedule-close" id="scheduleCloseBtn">×</button>
+
+            <h2>Izaberite termin</h2>
+            <p class="schedule-subtitle">
+                Odaberite jedan od slobodnih termina za Deloitte praksu.
+            </p>
+
+            <div id="calendarContainer"></div>
+
+            <button class="btn primary-btn schedule-confirm-btn" id="scheduleConfirmBtn">
+                Zakaži dan prakse
+            </button>
+        </div>
+    </div>
+
+    <!-- SUCCESS MODAL -->
+    <div class="success-overlay" id="successOverlay">
+        <div class="success-modal">
+            <div class="success-icon">✔</div>
+            <h3>Uspešno zakazano!</h3>
+            <p>Poslali smo vam sve informacije o terminu dana prakse.</p>
+            <button class="btn primary-btn" id="successCloseBtn">U redu</button>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© <span id="year"></span> Internship4day • Deloitte – Program praksi</p>
+        </div>
+    </footer>
+
+    <script src="scripts/deloitte.js"></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManpowerGroup – Prakse u HR oblasti | Internship4Day</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/company-htec.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container header-content">
+            <div class="logo">
+                <span class="logo-mark">I4D</span>
+                <span class="logo-text">Internship4Day</span>
+            </div>
+
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html#hero">Početna</a></li>
+                    <li><a href="index.html#companies">Kompanije</a></li>
+                    <li><a href="index.html#how-it-works">Kako funkcioniše</a></li>
+                    <li><a href="index.html#alumni">Alumni klub</a></li>
+                    
+                </ul>
+            </nav>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Otvori meni">
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO: MANPOWERGROUP -->
+        <section class="company-hero">
+            <div class="container company-hero-content">
+                <div class="company-hero-info">
+                    <a href="index.html#companies" class="back-link">← Nazad na listu kompanija</a>
+
+                    <h1>ManpowerGroup</h1>
+                    <p class="company-hero-meta">
+                        HR &amp; Regrutacija • Beograd • Upravljanje talentima &amp; razvoj radne snage
+                    </p>
+                    <p class="company-hero-text">
+                        ManpowerGroup je globalna konsultantska kompanija koja u Srbiji nudi rešenja iz oblasti ljudskih resursa,
+                        regrutacije i razvoja radne snage. Kroz <strong>Internship4day</strong> možeš da provedeš jedan dan prakse
+                        i vidiš kako izgleda selekcioni proces, proces zapošljavanja i rad sa kandidatima i klijentima.
+                    </p>
+                </div>
+
+                <div class="company-hero-side">
+                    <div class="company-highlight-card">
+                        <p class="highlight-title">Informacije o programu praksi</p>
+                        <ul class="highlight-list">
+                            <li>Oblasti prakse: regrutacija, employer branding, HR administracija</li>
+                            <li>Lokacija: Beograd &amp; Remote</li>
+                            <li>Trajanje dana prakse: 4–6 sati</li>
+                            <li>Aktivnosti: intervjui, selekcija CV-jeva, rad sa bazama kandidata</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FILTERI ZA PRAKSE U MANPOWERGROUP -->
+        <section class="mentors-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Pronađi dan prakse u ManpowerGroup</h2>
+                    <p>
+                        Filtriraj dane prakse u zavisnosti od toga da li te više zanima selekcija kandidata, 
+                        employer branding ili administrativna strana HR-a. Idealan način da vidiš kako HR funkcioniše u praksi.
+                    </p>
+                </header>
+
+                <form class="filters mentors-filters">
+                    <div class="filter-group">
+                        <label for="mentorSearchInput">Pretraga pozicija za praksu</label>
+                        <input 
+                            type="text" 
+                            id="mentorSearchInput" 
+                            placeholder="Unesi ime osobe ili naziv pozicije..."
+                        >
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="departmentSelect">Oblast prakse</label>
+                        <select id="departmentSelect">
+                            <option value="">Sve oblasti</option>
+                            <option value="regrutacija">Regrutacija</option>
+                            <option value="branding">Employer branding</option>
+                            <option value="administracija">HR administracija</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="mentorLocationSelect">Lokacija prakse</label>
+                        <select id="mentorLocationSelect">
+                            <option value="">Sve lokacije</option>
+                            <option value="beograd">Beograd</option>
+                            <option value="novi-sad">Novi Sad</option>
+                        </select>
+                    </div>
+                </form>
+
+                <!-- LISTA POZICIJA ZA PRAKSU -->
+                <div class="mentors-grid" id="mentorsList">
+                    
+                    <!-- PRAKSA 1 – Regrutacija -->
+                    <article class="mentor-card" data-departman="regrutacija" data-lokacija="beograd">
+                        <header class="mentor-header">
+                            <div class="mentor-avatar">JP</div>
+                            <div>
+                                <h3>Jovana Pavlović</h3>
+                                <p class="mentor-role">Recruitment Consultant</p>
+                                <p class="mentor-meta">Dan prakse: Beograd • Selekcija kandidata &amp; intervjui</p>
+                            </div>
+                        </header>
+
+                        <p class="mentor-description">
+                            Tokom dana prakse pratiš ceo tok selekcije: pregled CV-jeva, zakazivanje intervjua, 
+                            razgovor sa kandidatima i koordinaciju sa klijentima koji traže nove zaposlene.
+                        </p>
+
+                        <div class="mentor-tags">
+                            <span>Regrutacija</span>
+                            <span>Intervjui</span>
+                            <span>Selekcija</span>
+                        </div>
+
+                        <div class="mentor-actions">
+                            <button class="btn small-btn">Detalji o danu prakse</button>
+                        </div>
+                    </article>
+
+                    <!-- PRAKSA 2 – Employer branding -->
+                    <article class="mentor-card" data-departman="branding" data-lokacija="beograd">
+                        <header class="mentor-header">
+                            <div class="mentor-avatar">LD</div>
+                            <div>
+                                <h3>Lazar Dimitrijević</h3>
+                                <p class="mentor-role">Employer Branding Specialist</p>
+                                <p class="mentor-meta">Dan prakse: Beograd • Brend poslodavca &amp; kampanje</p>
+                            </div>
+                        </header>
+
+                        <p class="mentor-description">
+                            Dan prakse u employer branding oblasti pruža uvid u kreiranje sadržaja za društvene mreže,
+                            organizaciju karijernih događaja i aktivnosti kojima se gradi slika kompanije kao dobrog poslodavca.
+                        </p>
+
+                        <div class="mentor-tags">
+                            <span>Employer branding</span>
+                            <span>LinkedIn</span>
+                            <span>Kampanje</span>
+                        </div>
+
+                        <div class="mentor-actions">
+                            <button class="btn small-btn">Detalji o danu prakse</button>
+                        </div>
+                    </article>
+
+                    <!-- PRAKSA 3 – HR Administracija -->
+                    <article class="mentor-card" data-departman="administracija" data-lokacija="novi-sad">
+                        <header class="mentor-header">
+                            <div class="mentor-avatar">MS</div>
+                            <div>
+                                <h3>Milica Stojanov</h3>
+                                <p class="mentor-role">HR Administrator</p>
+                                <p class="mentor-meta">Dan prakse: Novi Sad • Dokumentacija &amp; podrška HR procesima</p>
+                            </div>
+                        </header>
+
+                        <p class="mentor-description">
+                            Ova praksa ti pokazuje „pozadinu“ HR procesa: rad sa ugovorima, evidencijama zaposlenih, 
+                            sistemima za praćenje radnog vremena i komunikacijom sa zaposlenima oko administrativnih pitanja.
+                        </p>
+
+                        <div class="mentor-tags">
+                            <span>HR administracija</span>
+                            <span>Dokumentacija</span>
+                            <span>Procesi</span>
+                        </div>
+
+                        <div class="mentor-actions">
+                            <button class="btn small-btn">Detalji o danu prakse</button>
+                        </div>
+                    </article>
+
+                    <!-- PRAKSA 4 – Regrutacija (remote) -->
+                    <article class="mentor-card" data-departman="regrutacija" data-lokacija="novi-sad">
+                        <header class="mentor-header">
+                            <div class="mentor-avatar">TS</div>
+                            <div>
+                                <h3>Tijana Simić</h3>
+                                <p class="mentor-role">Talent Acquisition</p>
+                                <p class="mentor-meta">Dan prakse: Novi Sad • Online selekcija &amp; komunikacija sa kandidatima</p>
+                            </div>
+                        </header>
+
+                        <p class="mentor-description">
+                            Dan prakse fokusiran na online kanale za regrutaciju – praćenje kandidata na LinkedIn-u,
+                            slanje poruka, online intervjue i predstavljanje pozicija kandidatima.
+                        </p>
+
+                        <div class="mentor-tags">
+                            <span>Talent acquisition</span>
+                            <span>Online intervjui</span>
+                            <span>LinkedIn</span>
+                        </div>
+
+                        <div class="mentor-actions">
+                            <button class="btn small-btn">Detalji o danu prakse</button>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- MODAL ZA KALENDAR – MANPOWERGROUP -->
+    <div class="schedule-overlay" id="scheduleOverlay">
+        <div class="schedule-modal">
+            <button class="schedule-close" id="scheduleCloseBtn">×</button>
+
+            <h2>Izaberite termin</h2>
+            <p class="schedule-subtitle">
+                Odaberite jedan od slobodnih termina za dan prakse u ManpowerGroup.
+            </p>
+
+            <div id="calendarContainer"></div>
+
+            <button class="btn primary-btn schedule-confirm-btn" id="scheduleConfirmBtn">
+                Zakaži dan prakse
+            </button>
+        </div>
+    </div>
+
+    <!-- SUCCESS MODAL -->
+    <div class="success-overlay" id="successOverlay">
+        <div class="success-modal">
+            <div class="success-icon">✔</div>
+            <h3>Uspešno zakazano!</h3>
+            <p>Poslali smo vam sve informacije o terminu dana prakse.</p>
+            <button class="btn primary-btn" id="successCloseBtn">U redu</button>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© <span id="year"></span> Internship4day • ManpowerGroup – Program praksi</p>
+        </div>
+    </footer>
+
+    <script src="scripts/manpower.js"></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

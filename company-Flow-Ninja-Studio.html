@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flow Ninja Studio – Dizajn & UX/UI Prakse | Internship4Day</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/company-htec.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container header-content">
+            <div class="logo">
+                <span class="logo-mark">I4D</span>
+                <span class="logo-text">Internship4Day</span>
+            </div>
+
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html#hero">Početna</a></li>
+                    <li><a href="index.html#companies">Kompanije</a></li>
+                    <li><a href="index.html#how-it-works">Kako funkcioniše</a></li>
+                    <li><a href="index.html#alumni">Alumni klub</a></li>
+                    
+                </ul>
+            </nav>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Otvori meni">
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO: FLOW NINJA -->
+        <section class="company-hero">
+            <div class="container company-hero-content">
+                <div class="company-hero-info">
+                    <a href="index.html#companies" class="back-link">← Nazad na listu kompanija</a>
+
+                    <h1>Flow Ninja Studio</h1>
+                    <p class="company-hero-meta">
+                        Dizajn &amp; UX/UI • Novi Sad • Brending, Web dizajn, Prototipovi
+                    </p>
+                    <p class="company-hero-text">
+                        Flow Ninja Studio je specijalizovan za izradu modernih digitalnih interfejsa, brending sistema
+                        i prototipova za globalne klijente. Kroz <strong>Internship4day</strong> možeš da provedeš jedan dan prakse
+                        sa UI/UX timovima, učestvuješ u istraživanju korisnika, kreiranju wireframe-ova i vizuelnog identiteta.
+                    </p>
+                </div>
+
+                <div class="company-hero-side">
+                    <div class="company-highlight-card">
+                        <p class="highlight-title">Informacije o programu praksi</p>
+                        <ul class="highlight-list">
+                            <li>Oblasti prakse: UI dizajn, UX istraživanje, brending</li>
+                            <li>Lokacije: Beograd/Novi Sad</li>
+                            <li>Trajanje dana prakse: 4–6 sati</li>
+                            <li>Format: shadowing dizajnera + rad na mini zadacima</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FILTERI ZA PRAKSE -->
+        <section class="mentors-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Pronađi dan prakse u Flow Ninja Studio</h2>
+                    <p>
+                        Filtriraj dostupne dane prakse u oblastima UI dizajna, UX istraživanja,
+                        brendinga i digitalnog iskustva. Prilagođeno studentima dizajna, umetnosti,
+                        front-end početnicima i svima koji vole kreativni rad.
+                    </p>
+                </header>
+
+                <form class="filters mentors-filters">
+                    <div class="filter-group">
+                        <label for="mentorSearchInput">Pretraga pozicija za praksu</label>
+                        <input 
+                            type="text" 
+                            id="mentorSearchInput" 
+                            placeholder="Unesi ime osobe ili oblast dizajna..."
+                        >
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="departmentSelect">Oblast prakse</label>
+                        <select id="departmentSelect">
+                            <option value="">Sve oblasti</option>
+                            <option value="ui">UI dizajn</option>
+                            <option value="ux">UX istraživanje</option>
+                            <option value="brending">Brending</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="mentorLocationSelect">Lokacija prakse</label>
+                        <select id="mentorLocationSelect">
+                            <option value="">Sve lokacije</option>
+                            <option value="beograd">Beograd</option>
+                        </select>
+                    </div>
+                </form>
+
+                <!-- LISTA POZICIJA ZA PRAKSU -->
+                <div class="mentors-grid" id="mentorsList">
+                    
+                    <!-- UI DIZAJN -->
+                    <article class="mentor-card" data-departman="ui" data-lokacija="beograd">
+                        <header class="mentor-header">
+                            <div class="mentor-avatar">SM</div>
+                            <div>
+                                <h3>Sara Mitrović</h3>
+                                <p class="mentor-role">UI Designer</p>
+                                <p class="mentor-meta">Dan prakse: Beograd • Interfejsi &amp; vizuelni stilovi</p>
+                            </div>
+                        </header>
+
+                        <p class="mentor-description">
+                            U okviru dana prakse upoznaćeš se sa procesom izrade UI dizajna u Figma okruženju,
+                            izradom stilskih vodiča (design systems) i pripremom elemenata za razvoj.
+                        </p>
+
+                        <div class="mentor-tags">
+                            <span>Figma</span>
+                            <span>UI Layout</span>
+                            <span>Design System</span>
+                        </div>
+
+                        <div class="mentor-actions">
+                            <button class="btn small-btn">Detalji o danu prakse</button>
+                        </div>
+                    </article>
+
+                    <!-- UX ISTRAŽIVANJE -->
+                    <article class="mentor-card" data-departman="ux" data-lokacija="beograd">
+                        <header class="mentor-header">
+                            <div class="mentor-avatar">VL</div>
+                            <div>
+                                <h3>Viktor Lukić</h3>
+                                <p class="mentor-role">UX Researcher</p>
+                                <p class="mentor-meta">Dan prakse: Beograd • Analiza korisnika &amp; prototipovi</p>
+                            </div>
+                        </header>
+
+                        <p class="mentor-description">
+                            Ova praksa fokusira se na korisničko istraživanje, testiranje prototipova,
+                            analizu ponašanja korisnika i UX koncepte koji stoje iza dobrog proizvoda.
+                        </p>
+
+                        <div class="mentor-tags">
+                            <span>User Testing</span>
+                            <span>UX Research</span>
+                            <span>Prototyping</span>
+                        </div>
+
+                        <div class="mentor-actions">
+                            <button class="btn small-btn">Detalji o danu prakse</button>
+                        </div>
+                    </article>
+
+                    <!-- BRENDING -->
+                    <article class="mentor-card" data-departman="brending" data-lokacija="beograd">
+                        <header class="mentor-header">
+                            <div class="mentor-avatar">AK</div>
+                            <div>
+                                <h3>Ana Krstić</h3>
+                                <p class="mentor-role">Brand Designer</p>
+                                <p class="mentor-meta">Dan prakse: Beograd • Vizuelni identitet &amp; brend strategija</p>
+                            </div>
+                        </header>
+
+                        <p class="mentor-description">
+                            Tokom dana prakse vidićeš kako se kreira brend identitet: tipografija, boje,
+                            logo koncepti, ton komunikacije i brend smernice.
+                        </p>
+
+                        <div class="mentor-tags">
+                            <span>Brending</span>
+                            <span>Logo dizajn</span>
+                            <span>Vizuelni identitet</span>
+                        </div>
+
+                        <div class="mentor-actions">
+                            <button class="btn small-btn">Detalji o danu prakse</button>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- MODAL ZA KALENDAR – FLOW NINJA -->
+    <div class="schedule-overlay" id="scheduleOverlay">
+        <div class="schedule-modal">
+            <button class="schedule-close" id="scheduleCloseBtn">×</button>
+
+            <h2>Izaberite termin</h2>
+            <p class="schedule-subtitle">
+                Odaberite jedan od slobodnih termina za dan prakse u Flow Ninja Studio.
+            </p>
+
+            <div id="calendarContainer"></div>
+
+            <button class="btn primary-btn schedule-confirm-btn" id="scheduleConfirmBtn">
+                Zakaži dan prakse
+            </button>
+        </div>
+    </div>
+
+    <!-- SUCCESS MODAL -->
+    <div class="success-overlay" id="successOverlay">
+        <div class="success-modal">
+            <div class="success-icon">✔</div>
+            <h3>Uspešno zakazano!</h3>
+            <p>Poslali smo vam sve informacije o terminu dana prakse.</p>
+            <button class="btn primary-btn" id="successCloseBtn">U redu</button>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© <span id="year"></span> Internship4day • Flow Ninja Studio – Program praksi</p>
+        </div>
+    </footer>
+
+    <script src="scripts/flowninja.js"></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

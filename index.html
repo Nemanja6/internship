@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship4Day – pronađi dan prakse u industriji</title>
+
+    <!-- Ovde linkujemo CSS (napravi fajl styles/style.css) -->
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER / NAVIGACIJA -->
+    <header class="site-header">
+        <div class="container header-content">
+
+
+
+            <div class="logo">
+                <img src="pictures/inter2.png" alt="internship logo" class="intern-logo">
+
+                <span class="logo-text">Internship4Day</span>
+            </div>
+
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="#hero">Početna</a></li>
+                    <li><a href="#companies">Kompanije</a></li>
+                    <li><a href="#how-it-works">Kako funkcioniše</a></li>
+                    <li><a href="#alumni">Alumni klub</a></li>
+                    <li><a href="#about">O nama</a></li>
+                </ul>
+            </nav>
+
+            <!-- LOGIN + PROFIL U DESNOM UGLU -->
+            <div class="header-auth">
+                <button class="login-link" id="loginOpenBtn">Login</button>
+                <div class="profile-icon">
+                    👤
+                </div>
+
+                <!-- Hamburger za mobilne -->
+                <button class="nav-toggle" id="navToggle" aria-label="Otvori meni">
+                    <span class="nav-toggle-line"></span>
+                    <span class="nav-toggle-line"></span>
+                    <span class="nav-toggle-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main>
+        <!-- HERO SEKCIJA -->
+        <section class="hero" id="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>
+                        Izbegni godine karijernog lutanja <br>
+                        <span class="gradient-tekst">za samo jedan dan</span> uz Internship4Day
+                    </h1>
+
+                    <p>
+                        Platforma koja povezuje mlade sa kompanijama kroz realno iskustvo jednog radnog dana.
+                        Izaberi oblast, pronađi idealnu kompaniju i zakazivanjem dana prakse otkrij svoj pravi karijerni
+                        pravac.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#companies" class="btn primary-btn">Pronađi kompaniju</a>
+                        <a href="#how-it-works" class="btn secondary-btn">Kako funkcioniše?</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <!-- Ovo je samo placeholder za kasnije (slika / ilustracija / ikone) -->
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">12+</span>
+                            <span class="stat-label">oblasti</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label">kompanija</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">70+</span>
+                            <span class="stat-label">dana prakse</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PARTNERS / CLIENTS CAROUSEL -->
+        <section class="partners-section">
+            <div class="container">
+                <p class="partners-label">Kompanije koje podržavaju Internship4Day</p>
+
+                <div class="logo-carousel">
+                    <div class="logo-track">
+                        <!-- 1. set logotipa -->
+                        <img src="pictures/htec.png" alt="HTEC logo">
+                        <img src="pictures/mccann.png" alt="McCann logo">
+                        <img src="pictures/ninjastudio.jpg" alt="Flow Ninja Studio logo">
+                        <img src="pictures/pwc.jpg" alt="PwC logo">
+                        <img src="pictures/manpower.png" alt="ManpowerGroup logo">
+                        <img src="pictures/deloitte.png" alt="Deloitte logo">
+
+                        <!-- 2. set – isti red, ponovljen zbog infinite scroll-a -->
+                        <img src="pictures/htec.png" alt="HTEC logo">
+                        <img src="pictures/mccann.png" alt="McCann logo">
+                        <img src="pictures/ninjastudio.jpg" alt="Flow Ninja Studio logo">
+                        <img src="pictures/pwc.jpg" alt="PwC logo">
+                        <img src="pictures/manpower.png" alt="ManpowerGroup logo">
+                        <img src="pictures/deloitte.png" alt="Deloitte logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- FILTERI + KOMPANIJE -->
+        <section class="companies-section" id="companies">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Kompanije i oblasti</h2>
+                    <p>
+                        Filtriraj kompanije po oblasti i pronađi prilike za praksu u poslu koji te zanima.
+                    </p>
+                </header>
+
+                <!-- FILTERI (OVO ĆE KASNIJE RADITI PREKO JS-a) -->
+                <form class="filters" id="filterForm">
+                    <div class="filter-group">
+                        <label for="searchInput">Pretraga kompanije</label>
+                        <input type="text" id="searchInput" name="pretraga" placeholder="Unesi ime kompanije...">
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="fieldSelect">Oblast</label>
+                        <select id="fieldSelect" name="oblast">
+                            <option value="">Sve oblasti</option>
+                            <option value="it">IT &amp; Programiranje</option>
+                            <option value="marketing">Marketing &amp; Prodaja</option>
+                            <option value="dizajn">Dizajn &amp; UX/UI</option>
+                            <option value="finansije">Finansije &amp; Računovodstvo</option>
+                            <option value="hr">HR</option>
+                            <option value="consulting">Konsalting</option>
+
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="locationSelect">Lokacija</label>
+                        <select id="locationSelect" name="lokacija">
+                            <option value="">Sve lokacije</option>
+                            <option value="beograd">Beograd</option>
+                            <option value="novi-sad">Novi Sad</option>
+                            <option value="nis">Niš</option>
+
+                        </select>
+                    </div>
+
+                    <button type="button" class="btn filter-btn" id="resetFilters">
+                        Resetuj filtere
+                    </button>
+                </form>
+
+                <!-- LISTA KOMPANIJA -->
+                <div class="companies-grid" id="companiesList">
+                    <!-- Svaka kartica je jedna kompanija. Data atributi služe za filtriranje u JS-u. -->
+
+                    <article class="company-card" data-oblast="it" data-lokacija="beograd">
+                        <div class="company-header">
+                            <img src="pictures/htec.png" alt="HTEC logo" class="company-logo">
+                            <div>
+                                <h3>HTEC</h3>
+                                <p class="company-field">IT &amp; Programiranje • Beograd</p>
+                            </div>
+                        </div>
+                        <p class="company-description">
+                            HTEC je tehnološka kompanija iz Srbije koja se bavi razvojem digitalnih proizvoda i
+                            naprednim inženjeringom.
+                        </p>
+                        <div class="company-actions">
+                            <a href="company-htec.html" class="btn small-btn">Prakse i oblasti</a>
+                        </div>
+                    </article>
+
+                    <article class="company-card" data-oblast="marketing" data-lokacija="novi-sad">
+                        <div class="company-header">
+                            <img src="pictures/mccann.png" alt="McCann logo" class="company-logo">
+                            <div>
+                                <h3>McCann</h3>
+                                <p class="company-field">Marketing &amp; Prodaja • Novi Sad</p>
+                            </div>
+                        </div>
+                        <p class="company-description">
+                            McCann je međunarodna marketinška agencija koja kreira kampanje za domaće i svetske
+                            brendove.
+                        </p>
+                        <div class="company-actions">
+                            <a href="company-mccann.html" class="btn small-btn">Prakse i oblasti</a>
+                        </div>
+                    </article>
+
+                    <article class="company-card" data-oblast="dizajn" data-lokacija="nis">
+                        <div class="company-header">
+                            <img src="pictures/ninjastudio.jpg" alt="ninja studio logo" class="company-logo">
+                            <div>
+                                <h3>Flow Ninja Studio</h3>
+                                <p class="company-field">Dizajn &amp; UX/UI • Niš</p>
+                            </div>
+                        </div>
+                        <p class="company-description">
+                            Studio specijalizovan za UI/UX dizajn, personalizovan brending i prototipove. Pozovite nas!
+                        </p>
+                        <div class="company-actions">
+                            <a href="company-Flow-Ninja-Studio.html" class="btn small-btn">Prakse i oblasti</a>
+                        </div>
+                    </article>
+
+                    <article class="company-card" data-oblast="finansije" data-lokacija="beograd">
+                        <div class="company-header">
+                            <img src="pictures/pwc.jpg" alt="PWC logo" class="company-logo">
+                            <div>
+                                <h3>PWC</h3>
+                                <p class="company-field">Finansije &amp; Računovodstvo • Beograd</p>
+                            </div>
+                        </div>
+                        <p class="company-description">
+                            PwC je međunarodna firma koja u Srbiji pruža usluge iz oblasti računovodstva, revizije i
+                            finansijskog savetovanja.
+                        </p>
+                        <div class="company-actions">
+                            <a href="company-pwc.html" class="btn small-btn">Prakse i oblasti</a>
+                        </div>
+                    </article>
+
+                    <article class="company-card" data-oblast="hr" data-lokacija="beograd">
+                        <div class="company-header">
+                            <img src="pictures/manpower.png" alt="ManPower logo" class="company-logo">
+                            <div>
+                                <h3>ManPower Group</h3>
+                                <p class="company-field">HR • Beograd</p>
+                            </div>
+                        </div>
+                        <p class="company-description">
+                            ManpowerGroup je globalna konsultantska kompanija koja u Srbiji nudi rešenja iz oblasti
+                            HR-a, regrutacije i razvoja radne snage.
+                        </p>
+                        <div class="company-actions">
+                            <a href="company-manpower-group.html" class="btn small-btn">Prakse i oblasti</a>
+                        </div>
+                    </article>
+
+                    <article class="company-card" data-oblast="consulting" data-lokacija="beograd">
+                        <div class="company-header">
+                            <img src="pictures/deloitte.png" alt="deloitte logo" class="company-logo">
+                            <div>
+                                <h3>Deloitte</h3>
+                                <p class="company-field">Konsalting • Beograd</p>
+                            </div>
+                        </div>
+                        <p class="company-description">
+                            Deloitte je međunarodna kompanija koja u Srbiji pruža usluge revizije,
+                            računovodstva, poreza i poslovnog konsaltinga.
+                        </p>
+                        <div class="company-actions">
+                            <a href="company-deloitte.html" class="btn small-btn">Prakse i oblasti</a>
+                        </div>
+                    </article>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- KAKO FUNKCIONIŠE -->
+        <section class="how-it-works" id="how-it-works">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Kako funkcioniše Internship4day?</h2>
+                    <p>Tri jednostavna koraka do tvog prvog iskustva sa praksom.</p>
+                </header>
+
+                <div class="steps-grid">
+                    <article class="step-card">
+                        <span class="step-number">1</span>
+                        <h3>Odaberi oblast i kompaniju</h3>
+                        <p>
+                            Pregledaj oblasti i kompanije koje učestvuju u programu.
+                            Filtriraj po industriji, gradu ili tipu prakse.
+                        </p>
+                    </article>
+
+                    <article class="step-card">
+                        <span class="step-number">2</span>
+                        <h3>Proveri dostupne termine</h3>
+                        <p>
+                            Svaka kompanija ima dostupne dane prakse u različitim timovima.
+                            Pogledaj opis dana prakse, tehnologije i aktivnosti koje možeš da pratiš.
+                        </p>
+                    </article>
+
+                    <article class="step-card">
+                        <span class="step-number">3</span>
+                        <h3>Zakaži</h3>
+                        <p>
+                            Odaberi dan prakse, potvrdi prijavu i dobijaš
+                            sve informacije na e-mail. Jednostavno kao zakazivanje pregleda.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- ALUMNI KLUB -->
+
+
+
+        <section class="alumni-section" id="alumni">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Alumni klub</h2>
+                    <p>
+                        Ovde su bivši polaznici koji su prošli praksu preko Internship4day platforme.
+                        Možeš da ih kontaktiraš i direktno pitaš za iskustvo sa praksom,
+                        atmosferom u kompaniji i savetima za prijavu.
+                    </p>
+                </header>
+
+                <div class="alumni-grid">
+                    <!-- ALUMNI 1 -->
+                    <article class="alumni-card">
+                        <div class="alumni-name-line">
+                            <h3>Jovana Petrović</h3>
+                            <span class="alumni-badge">IT &amp; Programiranje</span>
+                        </div>
+                        <p class="alumni-company">
+                            Praksa u: <strong>HTEC Group</strong> – Junior Frontend Developer
+                        </p>
+                        <p class="alumni-mentor">
+                            Kontakt osoba: <strong>Marko Ilić</strong>, vođa tima – Frontend tim
+                        </p>
+                        <p class="alumni-contact">LinkedIn:
+                        <div class="linkedin-red">
+                            <img src="pictures/link2.png" alt="link" class="link-logo">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                linkedin.com/in/jovana-petrovic
+                            </a>
+                        </div>
+
+
+                        </p>
+                        <p class="alumni-note">
+                            „Otvorena sam za pitanja o selekciji, tehničkom intervjuu i utiscima sa prakse.”
+                        </p>
+                    </article>
+
+                    <!-- ALUMNI 2 -->
+                    <article class="alumni-card">
+                        <div class="alumni-name-line">
+                            <h3>Nemanja Kovač</h3>
+                            <span class="alumni-badge">Marketing</span>
+                        </div>
+                        <p class="alumni-company">
+                            Praksa u: <strong>McCann</strong> – Junior Digital Marketing Specialist
+                        </p>
+                        <p class="alumni-mentor">
+                            Kontakt osoba: <strong>Ana Jovanović</strong>, Performance Marketing Lead
+                        </p>
+                        <p class="alumni-contact">LinkedIn:
+
+                        <div class="linkedin-red">
+                            <img src="pictures/link2.png" alt="link" class="link-logo">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                linkedin.com/in/nemanja-kovac
+                            </a>
+                        </div>
+
+                        </p>
+                        <p class="alumni-note">
+                            „Pišite ako vas zanima kako izgleda rad na kampanjama i šta se očekuje od praktikanata.”
+                        </p>
+                    </article>
+
+                    <!-- ALUMNI 3 -->
+                    <article class="alumni-card">
+                        <div class="alumni-name-line">
+                            <h3>Milica Radovanov</h3>
+                            <span class="alumni-badge">Dizajn &amp; UX/UI</span>
+                        </div>
+                        <p class="alumni-company">
+                            Praksa u: <strong>Flow Ninja Studio</strong> – Junior UI/UX Designer
+                        </p>
+                        <p class="alumni-mentor">
+                            Kontakt osoba: <strong>Petar Simić</strong>, Lead Product Designer
+                        </p>
+                        <p class="alumni-contact">LinkedIn:
+
+
+                        <div class="linkedin-red">
+                            <img src="pictures/link2.png" alt="link" class="link-logo">
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                linkedin.com/in/milica-radovanov
+                            </a>
+                        </div>
+
+                        </p>
+                        <p class="alumni-note">
+                            „Rado ću podeliti savete o portfoliju, zadacima na praksi i saradnji sa timom.”
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- O NAMA -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <header class="section-header">
+                    <h2>O nama</h2>
+                </header>
+                <p>
+                    Jedina platforma koja povezuje učenike, studente i kompanije kroz praktično iskustvo koje menjа
+                    percepciju,
+                    smanjuje greške u izboru karijere i gradi most između obrazovanja i tržišta rada.
+                </p>
+                <p>
+                    Težimo društvu u kojem se karijere biraju na osnovu iskustva, a ne pretpostavki.
+                    Kompanije otkrivaju talente rano, a obrazovne institucije postaju aktivni partneri u razvoju budućih
+                    generacija.
+                </p>
+            </div>
+        </section>
+
+        <!-- LOGIN MODAL -->
+        <div class="login-overlay" id="loginOverlay">
+            <div class="login-modal">
+                <button class="login-close" id="loginCloseBtn" aria-label="Zatvori login prozor">×</button>
+
+                <h2>Prijava na Internship4day</h2>
+                <p class="login-subtitle">
+                    Uloguj se na svoj nalog da bi pratio dane prakse koje te zanimaju.
+                </p>
+
+                <form class="login-form">
+                    <div class="form-group">
+                        <label for="loginEmail">Email</label>
+                        <input type="email" id="loginEmail" name="email" placeholder="tvoj.email@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="loginPassword">Lozinka</label>
+                        <input type="password" id="loginPassword" name="password" placeholder="Unesi lozinku">
+                    </div>
+
+                    <button type="button" class="btn primary-btn login-submit">
+                        Prijavi se
+                    </button>
+
+                    <p class="login-register">
+                        Nemaš nalog? <a href="#" class="register-link">Registruj se</a>
+                        <!-- Registracija nema funkciju, samo vizuelno -->
+                    </p>
+                </form>
+            </div>
+        </div>
+
+
+
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© <span id="year"></span> Internship4day • Platforma za povezivanje sa praksama u kompanijama</p>
+        </div>
+    </footer>
+
+
+    <script src="scripts/main.js"></script>
+    <script>
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

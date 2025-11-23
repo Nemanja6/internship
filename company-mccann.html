@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McCann – Prakse u marketingu | Internship4Day</title>
+
+    <!-- Globalni stilovi koje već koristiš -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/company-htec.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container header-content">
+            <div class="logo">
+                <span class="logo-mark">I4D</span>
+                <span class="logo-text">Internship4Day</span>
+            </div>
+
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html#hero">Početna</a></li>
+                    <li><a href="index.html#companies">Kompanije</a></li>
+                    <li><a href="index.html#how-it-works">Kako funkcioniše</a></li>
+                    <li><a href="index.html#alumni">Alumni klub</a></li>
+                   
+                </ul>
+            </nav>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Otvori meni">
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO ZA KOMPANIJU McCann -->
+        <section class="company-hero">
+            <div class="container company-hero-content">
+                <div class="company-hero-info">
+                    <a href="index.html#companies" class="back-link">← Nazad na listu kompanija</a>
+
+                    <h1>McCann</h1>
+                    <p class="company-hero-meta">
+                        Marketing &amp; Prodaja • Novi Sad • Kreativne kampanje &amp; strategije brendova
+                    </p>
+                    <p class="company-hero-text">
+                        McCann je međunarodna marketinška agencija koja radi na kampanjama za domaće i svetske brendove. 
+                        Kroz program <strong>Internship4day</strong> možeš da provedeš jedan dan na praksi u različitim timovima 
+                        i vidiš kako nastaju ideje, kampanje i sadržaj koji svakodnevno gledaš na društvenim mrežama i medijima.
+                    </p>
+                </div>
+
+                <div class="company-hero-side">
+                    <div class="company-highlight-card">
+                        <p class="highlight-title">Informacije o programu praksi</p>
+                        <ul class="highlight-list">
+                            <li>Oblasti prakse: kreativni tim, digital, medija planiranje, prodaja</li>
+                            <li>Lokacije: Novi Sad</li>
+                            <li>Trajanje dana prakse: 4–6 sati</li>
+                            <li>Format: prisustvovanje sastancima, brainstorm sesijama i radu na kampanjama</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FILTERI ZA PRAKSE U McCann -->
+        <section class="mentors-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Pronađi dan prakse u McCann agenciji</h2>
+                    <p>
+                        Filtriraj dane prakse po timu, lokaciji ili unesi ime osobe / naziv pozicije. 
+                        Možeš da ispratiš kako izgleda rad u kreativnom timu, digital marketingu, medija planiranju ili prodaji.
+                    </p>
+                </header>
+
+                <form class="filters mentors-filters" id="mentorFilterForm">
+                    <div class="filter-group">
+                        <label for="mentorSearchInput">Pretraga pozicija za praksu</label>
+                        <input 
+                            type="text" 
+                            id="mentorSearchInput" 
+                            name="pretragaPrakse" 
+                            placeholder="Unesi ime osobe ili naziv pozicije..."
+                        >
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="departmentSelect">Tim / oblast prakse</label>
+                        <select id="departmentSelect" name="departman">
+                            <option value="">Svi timovi</option>
+                            <option value="kreativa">Kreativni tim</option>
+                            <option value="digital">Digital marketing</option>
+                            <option value="medija">Medija planiranje</option>
+                            <option value="sales">Prodaja / Account</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="mentorLocationSelect">Lokacija dana prakse</label>
+                        <select id="mentorLocationSelect" name="lokacijaPrakse">
+                            <option value="">Sve lokacije</option>
+                            <option value="novi-sad">Novi Sad</option>
+                            <option value="beograd">Beograd</option>
+                        </select>
+                    </div>
+                </form>
+
+                <!-- LISTA POZICIJA ZA PRAKSU (FIKTIVNA IMENA) -->
+                <div class="mentors-grid" id="mentorsList">
+                    <!-- PRAKSA 1 – Kreativa -->
+                    <article class="mentor-card" 
+                             data-departman="kreativa" 
+                             data-lokacija="novi-sad">
+                        <header class="mentor-header">
+                            <div class="mentor-avatar">JV</div>
+                            <div>
+                                <h3>Jelena Vuković</h3>
+                                <p class="mentor-role">Copywriter / Kreativni tim</p>
+                                <p class="mentor-meta">Dan prakse: Novi Sad • Koncepti &amp; pisanje tekstova</p>
+                            </div>
+                        </header>
+
+                        <p class="mentor-description">
+                            Tokom dana prakse u kreativnom timu pratiš kako nastaju ideje za kampanje, slogani, 
+                            tekstovi za oglase i objave na društvenim mrežama. Prisustvuješ brainstorm sesijama 
+                            i vidiš kako se kreativne ideje pretvaraju u konkretne materijale.
+                        </p>
+
+                        <div class="mentor-tags">
+                            <span>Copywriting</span>
+                            <span>Kreativa</span>
+                            <span>Brainstorm</span>
+                        </div>
+
+                        <div class="mentor-actions">
+                            <button class="btn small-btn" type="button">Detalji o danu prakse</button>
+                        </div>
+                    </article>
+
+                    <!-- PRAKSA 2 – Digital -->
+                    <article class="mentor-card" 
+                             data-departman="digital" 
+                             data-lokacija="novi-sad">
+                        <header class="mentor-header">
+                            <div class="mentor-avatar">NP</div>
+                            <div>
+                                <h3>Nemanja Petrović</h3>
+                                <p class="mentor-role">Digital Marketing Specialist</p>
+                                <p class="mentor-meta">Dan prakse: Novi Sad • Kampanje na društvenim mrežama</p>
+                            </div>
+                        </header>
+
+                        <p class="mentor-description">
+                            Dan prakse u digital timu uključuje pogled u to kako se planiraju i optimizuju 
+                            kampanje na društvenim mrežama, kako izgledaju izveštaji klijentu i šta znači 
+                            rad sa metrikama kao što su engagement i konverzije.
+                        </p>
+
+                        <div class="mentor-tags">
+                            <span>Social media</span>
+                            <span>Kampanje</span>
+                            <span>Analytics</span>
+                        </div>
+
+                        <div class="mentor-actions">
+                            <button class="btn small-btn" type="button">Detalji o danu prakse</button>
+                        </div>
+                    </article>
+
+                    <!-- PRAKSA 3 – Medija planiranje -->
+                    <article class="mentor-card" 
+                             data-departman="medija" 
+                             data-lokacija="beograd">
+                        <header class="mentor-header">
+                            <div class="mentor-avatar">AS</div>
+                            <div>
+                                <h3>Ana Stanić</h3>
+                                <p class="mentor-role">Media Planner</p>
+                                <p class="mentor-meta">Dan prakse: Beograd • Budžeti &amp; planiranje oglasa</p>
+                            </div>
+                        </header>
+
+                        <p class="mentor-description">
+                            U okviru dana prakse u medija timu upoznaješ se sa planiranjem budžeta za oglašavanje, 
+                            raspodelom oglasa po kanalima (TV, online, radio, OOH) i načinom na koji se prati 
+                            učinkovitost kampanja.
+                        </p>
+
+                        <div class="mentor-tags">
+                            <span>Media plan</span>
+                            <span>Budžet</span>
+                            <span>Kampanje</span>
+                        </div>
+
+                        <div class="mentor-actions">
+                            <button class="btn small-btn" type="button">Detalji o danu prakse</button>
+                        </div>
+                    </article>
+
+                    <!-- PRAKSA 4 – Prodaja / Account -->
+                    <article class="mentor-card" 
+                             data-departman="sales" 
+                             data-lokacija="beograd">
+                        <header class="mentor-header">
+                            <div class="mentor-avatar">MK</div>
+                            <div>
+                                <h3>Marko Kovačević</h3>
+                                <p class="mentor-role">Account Manager</p>
+                                <p class="mentor-meta">Dan prakse: Beograd • Rad sa klijentima &amp; prezentacije</p>
+                            </div>
+                        </header>
+
+                        <p class="mentor-description">
+                            Dan prakse u account / prodajnoj ulozi pruža uvid u rad sa klijentima, pripremu prezentacija, 
+                            dogovore oko kampanja i koordinaciju između kreativnog, digital i medija tima.
+                        </p>
+
+                        <div class="mentor-tags">
+                            <span>Client service</span>
+                            <span>Prezentacije</span>
+                            <span>Koordinacija</span>
+                        </div>
+
+                        <div class="mentor-actions">
+                            <button class="btn small-btn" type="button">Detalji o danu prakse</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- MODAL ZA KALENDAR MCCANN -->
+<div class="schedule-overlay" id="scheduleOverlay">
+    <div class="schedule-modal">
+        <button class="schedule-close" id="scheduleCloseBtn">×</button>
+
+        <h2>Izaberite termin</h2>
+        <p class="schedule-subtitle">
+            Odaberite jedan od slobodnih termina za dan prakse u McCann-u.
+        </p>
+
+        <div id="calendarContainer"></div>
+
+        <button class="btn primary-btn schedule-confirm-btn" id="scheduleConfirmBtn">
+            Zakaži dan prakse
+        </button>
+    </div>
+</div>
+
+<!-- SUCCESS MODAL -->
+<div class="success-overlay" id="successOverlay">
+    <div class="success-modal">
+        <div class="success-icon">✔</div>
+        <h3>Uspešno zakazano!</h3>
+        <p>Poslali smo vam sve informacije o terminu dana prakse.</p>
+        <button class="btn primary-btn" id="successCloseBtn">U redu</button>
+    </div>
+</div>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© <span id="year"></span> Internship4day • McCann – Program praksi</p>
+        </div>
+    </footer>
+
+    <!-- GLOBALNI JS (isti kao za index) -->
+    <script src="scripts/mccann.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

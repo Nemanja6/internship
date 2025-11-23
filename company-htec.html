@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTEC Group – Prakse | Internship4Day</title>
+
+    <!-- Globalni stilovi koje već koristiš -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/company-htec.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container header-content">
+            <div class="logo">
+                <span class="logo-mark">I4D</span>
+                <span class="logo-text">Internship4Day</span>
+            </div>
+
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html#hero">Početna</a></li>
+                    <li><a href="index.html#companies">Kompanije</a></li>
+                    <li><a href="index.html#how-it-works">Kako funkcioniše</a></li>
+                    <li><a href="index.html#alumni">Alumni klub</a></li>
+                    
+                </ul>
+            </nav>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Otvori meni">
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO ZA KOMPANIJU HTEC -->
+        <section class="company-hero">
+            <div class="container company-hero-content">
+                <div class="company-hero-info">
+                    <a href="index.html#companies" class="back-link">← Nazad na listu kompanija</a>
+
+                    <h1>HTEC Group</h1>
+                    <p class="company-hero-meta">
+                        IT &amp; Inženjering • Beograd, Novi Sad, Niš • Produktni razvoj &amp; konsalting
+                    </p>
+                    <p class="company-hero-text">
+                        HTEC Group je tehnološka kompanija koja se bavi razvojem kompleksnih softverskih 
+                        rešenja, produktnim inženjeringom i inovacijama za klijente širom sveta. 
+                        Na ovoj stranici možeš da pronađeš pozicije za <strong>dan prakse</strong> u različitim timovima 
+                        i stekneš uvid kako zaista izgleda rad u modernoj IT kompaniji u Srbiji.
+                    </p>
+                </div>
+
+                <div class="company-hero-side">
+                    <div class="company-highlight-card">
+                        <p class="highlight-title">Informacije o programu praksi</p>
+                        <ul class="highlight-list">
+                            <li>Oblasti prakse: Backend, Frontend, QA, Product</li>
+                            <li>Lokacije: Beograd, Novi Sad, Niš</li>
+                            <li>Trajanje dana prakse: 4–6 sati</li>
+                            <li>Format: uživo u kancelariji ili online (dogovor sa timom)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FILTERI ZA PRAKSE U HTEC-U -->
+        <section class="mentors-section">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Pronađi dan prakse u HTEC Group</h2>
+                    <p>
+                        Filtriraj pozicije za praksu po timu, lokaciji ili unesi ime osobe / naziv pozicije 
+                        kako bi lakše našao iskustvo koje ti najviše odgovara – od backend razvoja, preko frontend-a, 
+                        do QA i product uloga.
+                    </p>
+                </header>
+
+                <form class="filters mentors-filters" id="mentorFilterForm">
+                    <div class="filter-group">
+                        <label for="mentorSearchInput">Pretraga pozicija za praksu</label>
+                        <input 
+                            type="text" 
+                            id="mentorSearchInput" 
+                            name="pretragaPrakse" 
+                            placeholder="Unesi ime osobe ili naziv pozicije..."
+                        >
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="departmentSelect">Tim / oblast prakse</label>
+                        <select id="departmentSelect" name="departman">
+                            <option value="">Svi timovi</option>
+                            <option value="backend">Backend tim</option>
+                            <option value="frontend">Frontend tim</option>
+                            <option value="qa">QA &amp; testiranje</option>
+                            <option value="product">Product &amp; projekti</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="mentorLocationSelect">Lokacija dana prakse</label>
+                        <select id="mentorLocationSelect" name="lokacijaPrakse">
+                            <option value="">Sve lokacije</option>
+                            <option value="beograd">Beograd</option>
+                            <option value="novi-sad">Novi Sad</option>
+                            <option value="nis">Niš</option>
+                            
+                        </select>
+                    </div>
+                </form>
+
+                <!-- LISTA POZICIJA ZA PRAKSU (FIKTIVNA IMENA) -->
+                <div class="mentors-grid" id="mentorsList">
+                    <!-- PRAKSA 1 -->
+                    <article class="mentor-card" 
+                             data-departman="backend" 
+                             data-lokacija="beograd">
+                        <header class="mentor-header">
+                            <div class="mentor-avatar">PP</div>
+                            <div>
+                                <h3>Petar Perić</h3>
+                                <p class="mentor-role">Tech Lead – Backend tim</p>
+                                <p class="mentor-meta">Dan prakse: Beograd • Backend &amp; arhitektura</p>
+                            </div>
+                        </header>
+
+                        <p class="mentor-description">
+                            Tokom dana prakse pratiš backend tim koji radi na mikroservisima i integracijama 
+                            sa eksternim sistemima. Dobićeš uvid u to kako se dizajnira struktura sistema, 
+                            kako izgledaju code review sesije i kako se rešavaju realni problemi u produkciji.
+                        </p>
+
+                        <div class="mentor-tags">
+                            <span>Java</span>
+                            <span>Spring</span>
+                            <span>Mikroservisi</span>
+                        </div>
+
+                        <div class="mentor-actions">
+                            <button 
+                                class="btn small-btn practice-details-btn" 
+                                type="button">
+                             Detalji o danu prakse
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- PRAKSA 2 -->
+                    <article class="mentor-card" 
+                             data-departman="frontend" 
+                             data-lokacija="novi-sad">
+                        <header class="mentor-header">
+                            <div class="mentor-avatar">IM</div>
+                            <div>
+                                <h3>Iva Marković</h3>
+                                <p class="mentor-role">Team Lead – Frontend tim</p>
+                                <p class="mentor-meta">Dan prakse: Novi Sad • Web &amp; UX</p>
+                            </div>
+                        </header>
+
+                        <p class="mentor-description">
+                            Dan prakse u frontend timu uključuje upoznavanje sa aktuelnim projektom, 
+                            rad u React okruženju, praćenje saradnje sa dizajnerima i backend timom 
+                            i uvid u to kako se nove funkcionalnosti implementiraju od taska do produkcije.
+                        </p>
+
+                        <div class="mentor-tags">
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>UX saradnja</span>
+                        </div>
+
+                        <div class="mentor-actions">
+                            <button class="btn small-btn" type="button">Detalji o danu prakse</button>
+                        </div>
+                    </article>
+
+                    <!-- PRAKSA 3 -->
+                    <article class="mentor-card" 
+                             data-departman="qa" 
+                             data-lokacija="nis">
+                        <header class="mentor-header">
+                            <div class="mentor-avatar">MS</div>
+                            <div>
+                                <h3>Marko Savić</h3>
+                                <p class="mentor-role">QA Lead</p>
+                                <p class="mentor-meta">Dan prakse: Niš • QA &amp; automatizacija testova</p>
+                            </div>
+                        </header>
+
+                        <p class="mentor-description">
+                            U okviru dana prakse u QA timu vidiš kako nastaju test planovi, 
+                            kako se pišu automatizovani testovi i kako se rešavaju bugovi pre nego što 
+                            funkcionalnost ode u produkciju.
+                        </p>
+
+                        <div class="mentor-tags">
+                            <span>Test automatizacija</span>
+                            <span>Selenium</span>
+                            <span>QA procesi</span>
+                        </div>
+
+                        <div class="mentor-actions">
+                            <button class="btn small-btn" type="button">Detalji o danu prakse</button>
+                        </div>
+                    </article>
+
+                    <!-- PRAKSA 4 -->
+                    <article class="mentor-card" 
+                             data-departman="product" 
+                             data-lokacija="nis">
+                        <header class="mentor-header">
+                            <div class="mentor-avatar">TS</div>
+                            <div>
+                                <h3>Tamara Stojković</h3>
+                                <p class="mentor-role">Product Owner</p>
+                                <p class="mentor-meta">Dan prakse: Product &amp; komunikacija sa klijentima</p>
+                            </div>
+                        </header>
+
+                        <p class="mentor-description">
+                            Dan prakse u product ulozi pruža uvid u komunikaciju sa klijentima, 
+                            definisanje user storija, prioritizaciju backloga i rad sa timovima 
+                            koji implementiraju funkcionalnosti.
+                        </p>
+
+                        <div class="mentor-tags">
+                            <span>Product</span>
+                            <span>Agile</span>
+                            <span>Scrum</span>
+                        </div>
+
+                        <div class="mentor-actions">
+                            <button class="btn small-btn" type="button">Detalji o danu prakse</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+                <!-- MODAL ZA KALENDAR DANA PRAKSE -->
+        <div class="practice-overlay" id="practiceOverlay">
+            <div class="practice-modal">
+                <button class="practice-close" id="practiceCloseBtn" aria-label="Zatvori prozor">×</button>
+
+                <h2>Odaberi dan prakse</h2>
+                <p class="practice-info" id="practiceInfo">
+                    HTEC Group • Dan prakse
+                </p>
+                <p class="practice-meta" id="practiceMeta">
+                    Lokacija: Beograd • Format: u kancelariji ili remote
+                </p>
+
+                <div class="practice-calendar">
+                    <div class="calendar-header">
+                        <span>April 2025</span>
+                        <div class="calendar-legend">
+                            <span class="legend-box free"></span> Slobodan dan
+                            <span class="legend-box busy"></span> Zauzet dan
+                        </div>
+                    </div>
+
+                    <div class="calendar-grid">
+                        <!-- Neka nasumična kombinacija zauzetih/slobodnih dana -->
+                        <!-- Linija 1 -->
+                        <div class="calendar-day busy">1</div>
+                        <div class="calendar-day">2</div>
+                        <div class="calendar-day">3</div>
+                        <div class="calendar-day busy">4</div>
+                        <div class="calendar-day">5</div>
+                        <div class="calendar-day">6</div>
+                        <div class="calendar-day busy">7</div>
+
+                        <!-- Linija 2 -->
+                        <div class="calendar-day">8</div>
+                        <div class="calendar-day">9</div>
+                        <div class="calendar-day busy">10</div>
+                        <div class="calendar-day">11</div>
+                        <div class="calendar-day busy">12</div>
+                        <div class="calendar-day">13</div>
+                        <div class="calendar-day">14</div>
+
+                        <!-- Linija 3 -->
+                        <div class="calendar-day">15</div>
+                        <div class="calendar-day busy">16</div>
+                        <div class="calendar-day">17</div>
+                        <div class="calendar-day">18</div>
+                        <div class="calendar-day busy">19</div>
+                        <div class="calendar-day">20</div>
+                        <div class="calendar-day">21</div>
+
+                        <!-- Linija 4 -->
+                        <div class="calendar-day">22</div>
+                        <div class="calendar-day busy">23</div>
+                        <div class="calendar-day">24</div>
+                        <div class="calendar-day">25</div>
+                        <div class="calendar-day busy">26</div>
+                        <div class="calendar-day">27</div>
+                        <div class="calendar-day">28</div>
+
+                        <!-- Linija 5 -->
+                        <div class="calendar-day">29</div>
+                        <div class="calendar-day busy">30</div>
+                    </div>
+                </div>
+
+                <button class="btn primary-btn practice-schedule-btn" id="scheduleBtn">
+                    Zakaži
+                </button>
+
+                <!-- MINI PRAVOUGAONIK ZA USPEŠNO ZAKAZIVANJE -->
+                <div class="schedule-toast" id="scheduleToast">
+                    <span class="toast-icon">✔</span>
+                    <span>Uspešno ste zakazali dan prakse.</span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- MODAL ZA KALENDAR -->
+<div class="schedule-overlay" id="scheduleOverlay">
+    <div class="schedule-modal">
+        <button class="schedule-close" id="scheduleCloseBtn">×</button>
+
+        <h2>Izaberite termin</h2>
+        <p class="schedule-subtitle">
+            Odaberite jedan od slobodnih termina za dan prakse.
+        </p>
+
+        <div id="calendarContainer"></div>
+
+        <button class="btn primary-btn schedule-confirm-btn" id="scheduleConfirmBtn">
+            Zakaži dan prakse
+        </button>
+    </div>
+</div>
+
+<!-- SUCCESS MODAL -->
+<div class="success-overlay" id="successOverlay">
+    <div class="success-modal">
+        <div class="success-icon">✔</div>
+        <h3>Uspešno zakazano!</h3>
+        <p>Poslali smo vam sve informacije o terminu.</p>
+        <button class="btn primary-btn" id="successCloseBtn">U redu</button>
+    </div>
+</div>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© <span id="year"></span> Internship4day • HTEC Group – Program praksi</p>
+        </div>
+    </footer>
+
+    <!-- GLOBALNI JS (isti kao za index) -->
+    <script src="scripts/htec.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
